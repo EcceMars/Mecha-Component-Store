@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CorePart" format=3 uid="uid://bnil5bem1s51d"]
+
+[ext_resource type="Texture2D" uid="uid://5dncg4yqc0eg" path="res://data/imgs/icons/parts/__core_BO.png" id="1_sc5sc"]
+[ext_resource type="Script" uid="uid://s464flvl705c" path="res://scripts/parts/CorePart.gd" id="1_wcc58"]
+
+[resource]
+script = ExtResource("1_wcc58")
+max_armor = 50.0
+e_storage = 20.0
+consumption = 10.0
+name = &"_core_BO"
+ID = 0
+icon = ExtResource("1_sc5sc")
+atype_restrictions = Array[int]([0])
+importance = 2
+material = 1
+metadata/_custom_type_script = "uid://s464flvl705c"
