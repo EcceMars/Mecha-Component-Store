@@ -9,10 +9,10 @@ extends Resource
 
 ## Defines some of the possible parts for this unit's armature
 enum A_CLASS {
-    BEAST,          ## General, exploration class mech. May use scansorial legs.
-    HUMANOID,       ## General, urban class mech.
-    VEHICLE         ## General, long distance and siege class mech.
-    }
+	BEAST,          ## General, exploration class mech. May use scansorial legs.
+	HUMANOID,       ## General, urban class mech.
+	VEHICLE         ## General, long distance and siege class mech.
+	}
 ## Importance of this piece to the machine's sytem. A critical part may cause total failure, or even the machine to explode.
 enum C_CLASS {
 	REDUNDANT,		## Supplementary part that, damaged or destroyed, will only lose its own functionality
@@ -20,22 +20,22 @@ enum C_CLASS {
 	CRITICAL		## Critical part that, damaged or destroyed, will either halt the mech immediately or in a short amount of time. When destroyed or critically damaged, some critical parts may even explode
 	}
 enum P_CLASS {
-    ARMATURE,		## Base frame/manipulator that holds the entire mech. Different types may present more slots (number and class), or have greater weight/mass capabilities
+	ARMATURE,		## Base frame/manipulator that holds the entire mech. Different types may present more slots (number and class), or have greater weight/mass capabilities
 	ARMS,			## This will be split in left and right later on (an arm main have a built-in tool and be unable to carry)
-    CORE,			## Main body of the mech (torso), it is also the pilot's cockpit
+	CORE,			## Main body of the mech (torso), it is also the pilot's cockpit
 	CPU,			## Hardware and software for the main systems of the machine
 	ECELL,			## Energy cell of the mech (usually, affects energy storage). Distinct types may offer greater risk when this part is damaged
-    ENGINE,         ## General motor/energy distributor of the unit
-    LEGS,			## Affects movement type (articulated [humanoid or scansorial], hovering, acquatic, tracked), capability to dash and overall space movement
-    MODULE_RACK,	## Carries different secondary tools (may be split in other part classes): cloacking, auxiliary weapons, droids/drones etc.
+	ENGINE,         ## General motor/energy distributor of the unit
+	LEGS,			## Affects movement type (articulated [humanoid or scansorial], hovering, acquatic, tracked), capability to dash and overall space movement
+	MODULE_RACK,	## Carries different secondary tools (may be split in other part classes): cloacking, auxiliary weapons, droids/drones etc.
 	}
 ## Armatures will generally lock certain weight classes from being used (a light armature won't take a heavy piece, and vice-versa).
 enum W_CLASS {
-    SOFTWARE,       ## Won't add any weight
-    LIGHT,          ## Adds a general weight of 5 to the total system
-    MEDIUM,         ## 10 weight
-    HEAVY           ## 15 weight
-    }
+	SOFTWARE,       ## Won't add any weight
+	LIGHT,          ## Adds a general weight of 5 to the total system
+	MEDIUM,         ## 10 weight
+	HEAVY           ## 15 weight
+	}
 
 ## Composition of the part (usually a more powerful material, tends to be less mobile). This may become its own class later.
 enum MATERIAL {
